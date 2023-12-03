@@ -25,4 +25,12 @@ public class ExtendedProcessor extends Processor{
     public boolean isOverclockable() {
         return overclockable;
     }
+
+    @Override
+    public void displayInfo() {
+        System.out.println("Extended Processor: " + getBrand() + " " + getModel() +
+                ", Cores: " + getCores() + ", Clock Speed: " + getClockSpeed() + " GHz" +
+                ", Cache Size: " + cacheSizeKB + " KB, Socket Type: " + socketType +
+                ", Overclockable: " + overclockable);
+    }
 }

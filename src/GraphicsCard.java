@@ -4,13 +4,16 @@ public class GraphicsCard extends Computer{
     private String architecture;
     public GraphicsCard(String brand, String model, int year, double price, boolean isLaptop,
                          double clockSpeed, String architecture,int vramGB) {
-        super(brand, model, year, price, isLaptop);
+        super();
+        //super(brand, model, year, price, isLaptop);
         this.architecture = architecture;
         this.clockSpeed = (int)clockSpeed;
         this.vramGB = vramGB;
     }
 
+    public GraphicsCard() {
 
+    }
 
     public int getvramGB() {
         return vramGB;
@@ -20,5 +23,15 @@ public class GraphicsCard extends Computer{
     }
     public String getArchitecture(){
         return architecture;
+    }
+
+    @Override
+    public void displayInfo() {
+System.out.println("graphics");
+    }
+
+    @Override
+    public void upgrade() {
+
     }
 }
