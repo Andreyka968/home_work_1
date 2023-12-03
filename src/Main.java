@@ -3,9 +3,19 @@ public class Main {
         ExtendedProcessor ext = new ExtendedProcessor("String brand", "String model",2020,400,true,
         4,4000," String architecture",
         4," String socketType",true);
-        System.out.println(ext.getCacheSizeKB());
+        System.out.println(ext.getClockSpeed());
+        HardDrive hd = HardDrive.newBuilder()
+                .settype("type")
+                .setcapacity(5)
+                .setrpm(4)
+                .setformFactor("Desctop")
+                .setisSSD(String.valueOf(true))
+                .build();
+        System.out.println(hd);
+
+
+
 
         }
     }
-
 
