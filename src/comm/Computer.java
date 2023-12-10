@@ -15,6 +15,9 @@ public abstract class Computer implements DisplayAble, Upgradable {
     public Computer() {
     }
 
+    public Computer(String brand, String model, int year, double price, boolean isLaptop) {
+    }
+
     // Абстрактный метод, который должны реализовать подклассы
     public abstract void displayInfo();
     public abstract void upgrade();

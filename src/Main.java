@@ -1,4 +1,5 @@
 import comm.parts.graphic_card.GraphicsCard;
+import comm.ComputerBuilder;
 import comm.parts.graphic_card.GraphicsCardBuilder;
 import comm.parts.processor.Processor;
 import comm.parts.processor.extended_processor.ExtendedProcessor;
@@ -42,6 +43,13 @@ public class Main {
                 .setModel("rtx3080")
                 .build();
                 System.out.println(gcb);
+        ComputerBuilder cp = new ComputerBuilder()
+                .setBrand("sony")
+                .setIsLaptop(false)
+                .setPrice(7000)
+                .setModel("A200")
+                .setYear(2022);
+        System.out.println(cp.displayInfo1());
         }
     }
 
