@@ -39,7 +39,7 @@ public class Main {
                 .setBrand("nVidea")
                 .setPrice(3000)
                 .setYear(2023)
-                .setModel("rtx3070")
+                .setModel("rtx3080")
                 .build();
                 System.out.println(gcb);
         }
