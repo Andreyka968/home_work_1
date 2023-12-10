@@ -1,4 +1,8 @@
-public class ExtendedProcessor extends Processor{
+package comm.parts.processor.extended_processor;
+
+import comm.parts.processor.Processor;
+
+public class ExtendedProcessor extends Processor {
     private int cacheSizeKB;
     private String socketType;
     private boolean overclockable;
@@ -28,7 +32,7 @@ public class ExtendedProcessor extends Processor{
 
     @Override
     public void displayInfo() {
-        System.out.println("Extended Processor: " + getBrand() + " " + getModel() +
+        System.out.println("Extended comm.parts.processor.Processor: " + getBrand() + " " + getModel() +
                 ", Cores: " + getCores() + ", Clock Speed: " + getClockSpeed() + " GHz" +
                 ", Cache Size: " + cacheSizeKB + " KB, Socket Type: " + socketType +
                 ", Overclockable: " + overclockable);

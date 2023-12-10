@@ -1,4 +1,11 @@
-public abstract class Computer implements DisplayAble,Upgradable{
+package comm;
+
+
+import comm.features.DisplayAble;
+import comm.features.Upgradable;
+import comm.parts.graphic_card.GraphicsCard;
+
+public abstract class Computer implements DisplayAble, Upgradable {
     private String brand;
     private String model;
     private int year;
@@ -22,8 +29,9 @@ public abstract class Computer implements DisplayAble,Upgradable{
     }
     public void Computor(String brand, String model, int year, double price, boolean isLaptop) {
     }
-    public void setBrand(String brand) {
+    public GraphicsCard setBrand(String brand) {
         this.brand = brand;
+        return null;
     }
 
     // Аксессоры (геттеры)

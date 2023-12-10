@@ -1,6 +1,6 @@
+package comm.parts.hard_drive;
 
-
-// HardDrive.java
+// comm.parts.hard_drive.HardDrive.java
 public class HardDrive {
     private String type;
     private int capacityGB;
@@ -28,7 +28,6 @@ public class HardDrive {
     }
 
     public HardDrive() {
-
     }
 
     public static Builder newBuilder() {
@@ -92,4 +91,5 @@ public class HardDrive {
         sb.append('}');
         return sb.toString();
     }
+
 }

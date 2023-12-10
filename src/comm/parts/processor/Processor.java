@@ -1,4 +1,9 @@
-class Processor extends Computer implements Upgradable{
+package comm.parts.processor;
+
+import comm.Computer;
+import comm.features.Upgradable;
+
+public class Processor extends Computer implements Upgradable {
     private int cores;
     private double clockSpeed;
     private String architecture;
@@ -15,7 +20,7 @@ class Processor extends Computer implements Upgradable{
 
     @Override
     public void displayInfo() {
-        System.out.println("Processor: " + getBrand() + " " + getModel() +
+        System.out.println("comm.parts.processor.Processor: " + getBrand() + " " + getModel() +
                 ", Cores: " + cores + ", Clock Speed: " + clockSpeed + " GHz");
     }
     // Аксессоры (геттеры) для дополнительных полей
@@ -32,6 +37,15 @@ class Processor extends Computer implements Upgradable{
    }
     @Override
     public void upgrade() {
-        System.out.println("Processor upgraded!");
+        System.out.println("comm.parts.processor.Processor upgraded!");
+    }
+    @Override
+    public String toString(){
+        final StringBuilder sb = new StringBuilder("Processor{");
+        sb.append("Core # '").append(cores).append('\'');
+        sb.append(", Clock speed '").append(clockSpeed).append('\'');
+        sb.append(", Architecture '").append(architecture).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }
