@@ -1,4 +1,4 @@
-package comm.features;
+package com.comm.features;
 
 public interface DisplayAble {
     boolean displayed = true;

@@ -1,6 +1,6 @@
-package comm.parts.graphic_card;
+package com.comm.parts.graphic_card;
 
-import comm.Computer;
+import com.comm.Computer;
 
 public class GraphicsCard extends Computer {
     private int vramGB;

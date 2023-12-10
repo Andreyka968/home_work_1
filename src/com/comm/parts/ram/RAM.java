@@ -1,4 +1,4 @@
-package comm.parts.ram;
+package com.comm.parts.ram;
 
 // Класс для представления оперативной памяти компьютера
 public class RAM {
@@ -65,7 +65,7 @@ public class RAM {
    }}
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("RAM{");
+        final StringBuilder sb = new StringBuilder("(StringBuilder) RAM{");
         sb.append("type='").append(type).append('\'');
         sb.append(", sizeGB=").append(sizeGB);
         sb.append(", frequency=").append(frequency);

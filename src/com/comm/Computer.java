@@ -1,9 +1,9 @@
-package comm;
+package com.comm;
 
 
-import comm.features.DisplayAble;
-import comm.features.Upgradable;
-import comm.parts.graphic_card.GraphicsCard;
+import com.comm.features.DisplayAble;
+import com.comm.features.Upgradable;
+import com.comm.parts.graphic_card.GraphicsCard;
 
 public abstract class Computer implements DisplayAble, Upgradable {
     private String brand;
@@ -13,6 +13,9 @@ public abstract class Computer implements DisplayAble, Upgradable {
     private boolean isLaptop;
 
     public Computer() {
+    }
+
+    public Computer(String brand, String model, int year, double price, boolean isLaptop) {
     }
 
     // Абстрактный метод, который должны реализовать подклассы

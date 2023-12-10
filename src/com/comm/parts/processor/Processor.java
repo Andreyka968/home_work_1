@@ -1,7 +1,9 @@
-package comm.parts.processor;
+package com.comm.parts.processor;
 
-import comm.Computer;
-import comm.features.Upgradable;
+import com.comm.Computer;
+import com.comm.features.Upgradable;
+
+import java.util.StringJoiner;
 
 public class Processor extends Computer implements Upgradable {
     private int cores;
@@ -20,7 +22,7 @@ public class Processor extends Computer implements Upgradable {
 
     @Override
     public void displayInfo() {
-        System.out.println("comm.parts.processor.Processor: " + getBrand() + " " + getModel() +
+        System.out.println("com.comm.parts.processor.Processor: " + getBrand() + " " + getModel() +
                 ", Cores: " + cores + ", Clock Speed: " + clockSpeed + " GHz");
     }
     // Аксессоры (геттеры) для дополнительных полей
@@ -37,15 +39,21 @@ public class Processor extends Computer implements Upgradable {
    }
     @Override
     public void upgrade() {
-        System.out.println("comm.parts.processor.Processor upgraded!");
+        System.out.println("com.comm.parts.processor.Processor upgraded!");
     }
     @Override
     public String toString(){
-        final StringBuilder sb = new StringBuilder("Processor{");
-        sb.append("Core # '").append(cores).append('\'');
-        sb.append(", Clock speed '").append(clockSpeed).append('\'');
-        sb.append(", Architecture '").append(architecture).append('\'');
-        sb.append('}');
-        return sb.toString();
+//        final StringBuilder sb = new StringBuilder("Processor{");
+//        sb.append("Core # '").append(cores).append('\'');
+//        sb.append(", Clock speed '").append(clockSpeed).append('\'');
+//        sb.append(", Architecture '").append(architecture).append('\'');
+//        sb.append('}');
+  //      return sb.toString();
+        return new StringJoiner(",  ","(StringJoiner) Processor {","}")
+                .add("Core # '"+cores+'\'')
+                .add(", Clock speed '"+clockSpeed+'\'')
+                .add(", Architecture '"+architecture+'\'')
+                .add("}")
+                .toString();
     }
 }
