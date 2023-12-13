@@ -1,3 +1,4 @@
+
 package com.comm;
 
 public class ComputerBuilder {
@@ -39,6 +40,7 @@ public class ComputerBuilder {
             }
         };}
 
+
     @Override
     public String toString() {
         return "(String concat+) ComputerBuilder{" +
@@ -65,4 +67,16 @@ public class ComputerBuilder {
 //        return df.toString();
         
  //   }
+
+    public String displayInfo1 (){
+        StringBuilder df = new StringBuilder();
+        df.append("Computer{");
+        df.append("brand \"").append(brand).append("\"");
+        df.append(";  ").append("year").append(" ").append(year);
+        df.append(";  isLaptop ").append(isLaptop);
+        df.append(";  model   ").append(model);
+        df.append(";  price  ").append(price);
+        df.append("}");
+        return df.toString();
+    }
 }

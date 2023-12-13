@@ -53,7 +53,7 @@ public class Processor extends Computer implements Upgradable {
                 .add("Core # '"+cores+'\'')
                 .add(", Clock speed '"+clockSpeed+'\'')
                 .add(", Architecture '"+architecture+'\'')
-                .add("}")
+               // .add("}")
                 .toString();
     }
 }
