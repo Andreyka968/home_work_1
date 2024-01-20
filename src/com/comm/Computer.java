@@ -1,4 +1,11 @@
-public abstract class Computer implements DisplayAble,Upgradable{
+package com.comm;
+
+
+import com.comm.features.DisplayAble;
+import com.comm.features.Upgradable;
+import com.comm.parts.graphic_card.GraphicsCard;
+
+public abstract class Computer implements DisplayAble, Upgradable {
     private String brand;
     private String model;
     private int year;
@@ -6,6 +13,9 @@ public abstract class Computer implements DisplayAble,Upgradable{
     private boolean isLaptop;
 
     public Computer() {
+    }
+
+    public Computer(String brand, String model, int year, double price, boolean isLaptop) {
     }
 
     // Абстрактный метод, который должны реализовать подклассы
@@ -22,8 +32,9 @@ public abstract class Computer implements DisplayAble,Upgradable{
     }
     public void Computor(String brand, String model, int year, double price, boolean isLaptop) {
     }
-    public void setBrand(String brand) {
+    public GraphicsCard setBrand(String brand) {
         this.brand = brand;
+        return null;
     }
 
     // Аксессоры (геттеры)

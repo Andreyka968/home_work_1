@@ -1,4 +1,8 @@
-public class GraphicsCard extends Computer{
+package com.comm.parts.graphic_card;
+
+import com.comm.Computer;
+
+public class GraphicsCard extends Computer {
     private int vramGB;
     private int clockSpeed;
     private String architecture;
@@ -12,12 +16,9 @@ public class GraphicsCard extends Computer{
     }
 
     public GraphicsCard() {
-
     }
 
-    public int getvramGB() {
-        return vramGB;
-    }
+    public int getvramGB() {return vramGB;}
     public int getclockSpeed() {
         return clockSpeed;
     }
@@ -29,9 +30,7 @@ public class GraphicsCard extends Computer{
     public void displayInfo() {
 System.out.println("graphics");
     }
-
     @Override
     public void upgrade() {
-
     }
 }

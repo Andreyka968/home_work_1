@@ -1,6 +1,6 @@
+package com.comm.parts.hard_drive;
 
-
-// HardDrive.java
+// com.comm.parts.hard_drive.HardDrive.java
 public class HardDrive {
     private String type;
     private int capacityGB;
@@ -28,7 +28,6 @@ public class HardDrive {
     }
 
     public HardDrive() {
-
     }
 
     public static Builder newBuilder() {
@@ -83,13 +82,15 @@ public class HardDrive {
     }
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Hard Drive{");
-        sb.append("type='").append(type).append('\'');
-        sb.append(", capacityGB=").append(capacityGB);
-        sb.append(", rpm=").append(rpm);
-        sb.append(", formFactor=").append(formFactor);
-        sb.append(", isSSD=").append(isSSD);
-        sb.append('}');
-        return sb.toString();
+//        final StringBuilder sb = new StringBuilder("Hard Drive{");
+//        sb.append("type='").append(type).append('\'');
+//        sb.append(", capacityGB=").append(capacityGB);
+//        sb.append(", rpm=").append(rpm);
+//        sb.append(", formFactor=").append(formFactor);
+//        sb.append(", C=").append(isSSD);
+//        sb.append('}');
+//        return sb.toString();
+        return String.format("(String.Format) HardDrive {type='%s', capacityGB='%d', rpm='%d', formFactor='%s', isSSD='%s' }",type,capacityGB,rpm,formFactor,isSSD);
     }
+
 }
